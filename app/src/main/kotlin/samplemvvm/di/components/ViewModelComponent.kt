@@ -3,11 +3,11 @@ package samplemvvm.di.components
 import dagger.Component
 import samplemvvm.di.modules.ViewModelModule
 import samplemvvm.di.scopes.UserScope
-import samplemvvm.presentations.house.HouseActivity
+import samplemvvm.presentation.house.HouseActivity
 
 @UserScope
-@Component(dependencies =  arrayOf(AppComponent::class),
-        modules = arrayOf(ViewModelModule::class)
+@Component(dependencies = [(AppComponent::class)],
+        modules = [(ViewModelModule::class)]
 )
 
 interface ViewModelComponent {

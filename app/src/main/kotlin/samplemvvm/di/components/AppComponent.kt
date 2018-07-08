@@ -5,7 +5,7 @@ import android.content.SharedPreferences
 import samplemvvm.di.modules.AppModule
 import samplemvvm.di.modules.NetModule
 import samplemvvm.di.modules.SharedPrefModule
-import samplemvvm.models.APIs.ApiProvider
+import samplemvvm.data.api.ApiProvider
 import dagger.Component
 import javax.inject.Named
 import javax.inject.Singleton

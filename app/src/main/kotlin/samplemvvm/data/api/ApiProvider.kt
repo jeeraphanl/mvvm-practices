@@ -1,8 +1,8 @@
-package samplemvvm.models.APIs
+package samplemvvm.data.api
 
 import io.reactivex.Observable
 import retrofit2.http.GET
-import samplemvvm.models.entities.HouseResponse
+import samplemvvm.data.entities.response.HouseResponse
 
 interface ApiProvider {
 
