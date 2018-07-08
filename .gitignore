@@ -147,3 +147,8 @@ gradle/wrapper/gradle-wrapper.properties
 .idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_0_jar.xml
 .gradle/4.4/fileContent/fileContent.lock
 .gradle/4.4/fileHashes/resourceHashesCache.bin
+.gradle/4.4/javaCompile/classAnalysis.bin
+.gradle/4.4/javaCompile/jarAnalysis.bin
+.gradle/4.4/javaCompile/javaCompile.lock
+.gradle/4.4/javaCompile/taskHistory.bin
+.gradle/4.4/javaCompile/taskJars.bin
