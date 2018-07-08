@@ -1,4 +1,4 @@
-package samplemvvm.presentations.house
+package samplemvvm.presentation.house
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -8,11 +8,11 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_house.*
 import samplemvvm.R
-import samplemvvm.SampleApplication
+import samplemvvm.MainApplication
 import samplemvvm.di.components.DaggerViewModelComponent
 import samplemvvm.di.components.ViewModelComponent
 import samplemvvm.di.modules.ViewModelModule
-import samplemvvm.extensions.add
+import samplemvvm.extension.add
 import javax.inject.Inject
 
 class HouseActivity : AppCompatActivity() {
@@ -28,7 +28,7 @@ class HouseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_house)
 
         component = DaggerViewModelComponent
-                .builder().appComponent(SampleApplication.appComponent)
+                .builder().appComponent(MainApplication.appComponent)
                 .viewModelModule(ViewModelModule())
                 .build()
         component.inject(this)
@@ -60,6 +60,7 @@ class HouseActivity : AppCompatActivity() {
                     adapter.notifyDataSetChanged()
                 }, { error ->
                     Toast.makeText(this, error.localizedMessage, Toast.LENGTH_SHORT).show()
-                }).add(disposeBag)
+                })
+                .add(disposeBag)
     }
 }

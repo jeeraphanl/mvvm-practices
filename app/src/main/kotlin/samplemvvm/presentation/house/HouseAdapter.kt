@@ -1,4 +1,4 @@
-package samplemvvm.presentations.house
+package samplemvvm.presentation.house
 
 import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.RecyclerView.ViewHolder
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.house_item.view.*
 import samplemvvm.R
-import samplemvvm.models.entities.HouseResponse
+import samplemvvm.data.entities.response.HouseResponse
 
 
 class HouseAdapter : RecyclerView.Adapter<ViewHolder>() {

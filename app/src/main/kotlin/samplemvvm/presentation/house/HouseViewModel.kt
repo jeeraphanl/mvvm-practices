@@ -1,11 +1,11 @@
-package samplemvvm.presentations.house
+package samplemvvm.presentation.house
 
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.PublishSubject
-import samplemvvm.models.APIs.ApiProvider
-import samplemvvm.models.entities.HouseResponse
+import samplemvvm.data.entities.response.HouseResponse
+import samplemvvm.usecase.GetHouseUseCase
 
 interface HouseViewModel {
 
@@ -22,7 +22,7 @@ interface HouseViewModel {
 }
 
 class HouseViewModelImpl(
-        private val api: ApiProvider
+        private val getHouseUseCase: GetHouseUseCase
 ) : HouseViewModel.Input, HouseViewModel.Output, HouseViewModel {
 
     override val output: HouseViewModel.Output = this
@@ -38,10 +38,7 @@ class HouseViewModelImpl(
 
         houseList = loadData
                 .observeOn(Schedulers.io())
-                .flatMap {
-                    api.getData()
-                }.map {
-                    it.data!!
-                }
+                .flatMap { getHouseUseCase.getListHouse() }
+                .map { it.data!! }
     }
 }

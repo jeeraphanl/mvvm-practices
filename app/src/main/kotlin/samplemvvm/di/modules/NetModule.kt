@@ -2,7 +2,7 @@ package samplemvvm.di.modules
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import samplemvvm.models.APIs.ApiProvider
+import samplemvvm.data.api.ApiProvider
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient

@@ -1,4 +1,4 @@
-package samplemvvm.models.entities
+package samplemvvm.data.entities.response
 
 import com.google.gson.annotations.SerializedName
 

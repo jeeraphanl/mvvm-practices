@@ -1,4 +1,4 @@
-package samplemvvm.extensions
+package samplemvvm.extension
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

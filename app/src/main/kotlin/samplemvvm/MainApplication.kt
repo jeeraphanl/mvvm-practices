@@ -5,7 +5,7 @@ import samplemvvm.di.components.AppComponent
 import samplemvvm.di.components.DaggerAppComponent
 import samplemvvm.di.modules.AppModule
 
-class SampleApplication : Application() {
+class MainApplication : Application() {
     
     companion object {
         lateinit var appComponent: AppComponent
