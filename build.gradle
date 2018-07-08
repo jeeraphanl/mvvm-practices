@@ -27,7 +27,7 @@ task clean(type: Delete) {
 }
 
 ext {
-    supportLibVersion = '26.0.0'
+    supportLibVersion = '27.0.0'
     junitVersion = '4.12'
     mockitoVersion = '1.10.19'
     mockitoKotlinVersion = '1.4.0'
