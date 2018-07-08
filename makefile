@@ -12,6 +12,6 @@ build:
 	./gradlew assembleDebug
 
 	$(info Copying the APK to the artefacts folder...)
-	cp -r ./app/build/outputs/apk/release/app-release.apk ./artefacts/app.apk
+	cp -r ./app/build/outputs/apk/debug/app-debug.apk ./artefacts/app.apk
 
 .PHONY: build
